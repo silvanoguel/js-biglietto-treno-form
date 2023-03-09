@@ -5,6 +5,9 @@ sumbitBtn.addEventListener("click", function() {
     result.className = "";
 
     // Prendere il valore dall input.
+    const userNameInput = document.getElementById("user-name");
+    const userName = userNameInput.value;
+
     const userAgeInput = document.getElementById("user-age");
     const userAge = userAgeInput.value;
     
@@ -23,8 +26,7 @@ sumbitBtn.addEventListener("click", function() {
     // per over 65
     const specialPrice2 = parseInt(ticketPrice - (ticketPrice * 0.4));
 
-
-    if (userAge < 18) {
+     if (userAge < 18) {
         specialPrice1.toFixed(2);
         console.log (specialPrice1);
         document.getElementById("result").innerHTML =
@@ -40,11 +42,9 @@ sumbitBtn.addEventListener("click", function() {
         `Il costo del tuo biglietto è: ${ticketPrice.toFixed(2)} €`;
     }
 
-
-    // OUTPUT
- 
-
     // Ripulisco i campi di input
     userAgeInput.value = "";
     userKmInput.value = "";
+    userNameInput.value = "";
+
 });

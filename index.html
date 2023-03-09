@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <h1>Ciao utente!</h1>
+   
+    <section class="form">
+        <label for="user-name">Nome e Cognome</label>
+        <input type="text" id="user-name">
 
-    <div>
         <label for="user-age">Quanti anni hai ?</label>
         <input type="text" id="user-age">
 
@@ -18,10 +20,9 @@
         <input type="text" id="user-km">
 
         <button id="submit-btn">Invia</button>
-    </div>
+    </section>
 
     <h2 id="result"></h2>
-
 
     <script src="js/script.js"></script>
 </body>
